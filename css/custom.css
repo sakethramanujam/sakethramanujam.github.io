@@ -1,0 +1,38 @@
+body{
+    background-color: #252830;  
+    /*background-image: url(http://vunature.com/wp-content/uploads/2017/01/space-universe-galaxy-colors-planets-stars-hd-image-of-nature-1600x1080.jpg);*/
+    background-repeat: no-repeat;   
+    -webkit-filter: blur(25%);
+    filter: blur(25%);
+    font-family: 'Exo 2', sans-serif;
+}
+.nav>.nav-tabs{
+    height:15vh ;
+    align-items: center;
+    
+    ;
+    overflow: hidden;
+}
+.nav-item{
+    width: 25vw;
+    text-align: center;
+    color: white;
+}
+.card-container{
+margin-top: 20%;
+    text-align: center;
+    color: white;
+}
+.nav-tabs{
+    background-color: #212121;
+}
+#home-tab.active{
+    background-color: yellow;
+}
+#projects-tab.active{
+    background-color: orangered;
+    color: white;
+}
+#name{
+    font-family: Satisfy;
+}
