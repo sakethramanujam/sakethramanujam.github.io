@@ -6,6 +6,9 @@ body{
     filter: blur(25%);
     font-family: 'Exo 2', sans-serif;
 }
+.body-container{
+    height: 100%;
+}
 .nav>.nav-tabs{
     height:15vh ;
     align-items: center;
@@ -37,5 +40,16 @@ margin-top: 20%;
     font-family: Satisfy;
 }
 
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   align-content: center;
+   text-align: center;
+   font-family: roboto;
+   font-size: 20px;
+}
 
 
