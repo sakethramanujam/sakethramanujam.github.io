@@ -77,18 +77,7 @@ body{
     font-size:17px;
     color: white;
 }
-.footer{
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   color: white;
-   align-content: center;
-   text-align: center;
-   font-family: roboto;
-   font-size: auto;
-   background-color: grey;
-}
+
 #fandom{
     font-size:16px;
     color: white;
@@ -104,6 +93,24 @@ body{
 #warning{
     color:red;
 }
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: roboto;
+    font-size: auto;
+    background:rgba(37, 40, 48, 1);
+ }
+ .container{
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+ }
 @media only screen and (max-width:767px){
     .nav-tabs{
         bottom:0;
