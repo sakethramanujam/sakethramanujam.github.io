@@ -13,7 +13,7 @@ body{
     overflow: hidden;
 }
 .nav-item{
-    width: 25vw;
+    width: 25%;
     text-align: center;
     color: white;
 }
