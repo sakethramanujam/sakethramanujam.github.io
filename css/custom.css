@@ -111,6 +111,25 @@ body{
     width: auto;
     max-width: 680px;
     padding: 0 15px;
+    
+ }
+ #projects>.container{
+    width: auto;
+    margin-top: 45vh;
+    max-width: 680px;
+    padding: 0 15px;
+    color:white;
+    align-content: center;
+    text-align: center;
+ }
+ #blog>.container{
+    width: auto;
+    margin-top: 45vh;
+    max-width: 680px;
+    padding: 0 15px;
+    color:white;
+    align-content: center;
+    text-align: center;
  }
 @media only screen and (max-width:767px){
     .nav-tabs{
