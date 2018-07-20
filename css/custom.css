@@ -33,6 +33,24 @@ body{
     background-color: orangered;
     color: white;
 }
+#projects>.container{
+    width: auto;
+    margin-top: 45vh;
+    max-width: 680px;
+    padding: 0 15px;
+    color:white;
+    align-content: center;
+    text-align: center;
+ }
+ #blog>.container{
+    width: auto;
+    margin-top: 45vh;
+    max-width: 680px;
+    padding: 0 15px;
+    color:white;
+    align-content: center;
+    text-align: center;
+ }
 #name{
     font-family: Satisfy;
 }
@@ -93,6 +111,11 @@ body{
 #warning{
     color:red;
 }
+#contact{
+    color: white;
+    align-content: center;
+    text-align: center;
+}
 .footer{
     position: fixed;
     left: 0;
@@ -113,24 +136,7 @@ body{
     padding: 0 15px;
     
  }
- #projects>.container{
-    width: auto;
-    margin-top: 45vh;
-    max-width: 680px;
-    padding: 0 15px;
-    color:white;
-    align-content: center;
-    text-align: center;
- }
- #blog>.container{
-    width: auto;
-    margin-top: 45vh;
-    max-width: 680px;
-    padding: 0 15px;
-    color:white;
-    align-content: center;
-    text-align: center;
- }
+
 @media only screen and (max-width:767px){
     .nav-tabs{
         bottom:0;
