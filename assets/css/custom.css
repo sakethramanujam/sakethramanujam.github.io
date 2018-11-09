@@ -5,6 +5,10 @@ body{
 .body-container{
     height: 100%;
 }
+
+a{
+    text-decoration: none!important;
+}
 .nav>.nav-tabs{
     height:15vh ;
     align-items: center;
@@ -112,12 +116,16 @@ body{
     color:red;
 }
 #contact{
-    color: white;
+    color: white!important;
     align-content: center;
     text-align: center;
+    font-size:25px;
+}
+#contact>a{
+    text-decoration: none!important;
 }
 .footer{
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -130,12 +138,104 @@ body{
     background:rgba(37, 40, 48, 1);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
- .container{
+ #projects>.container{
+    margin-top: 10vh!important;
     width: auto;
     max-width: 680px;
     padding: 0 15px;
+    color:#007bff;
+    text-decoration: none!important;
     
  }
+
+h1, h2, h3 {
+font-weight: 300;
+}
+
+.timeline {
+position: relative;
+overflow: auto;
+}
+.timeline:before {
+content: '';
+position: absolute;
+height: 100%;
+width: 5px;
+background: #dfdfdf;
+left: 0;
+}
+.timeline h2 {
+background: #dddddd;
+max-width: 6em;
+margin: 0 auto 1em;
+padding: 0.5em;
+text-align: center;
+position: relative;
+clear: both;
+}
+.timeline ul {
+list-style: none;
+padding: 0 0 0 1em;
+z-index: 1;
+}
+.timeline li {
+background: #dddddd;
+padding: 1em;
+margin-bottom: 1em;
+position: relative;
+width: auto;
+}
+.timeline li:before {
+content: '';
+width: 0;
+height: 0;
+border-top: 1em solid #dddddd;
+border-left: 1em solid transparent;
+position: absolute;
+left: -1em;
+top: 0;
+}
+.timeline h3 {
+margin-top: 0;
+}
+.timeline time {
+font-style: italic;
+}
+
+@media screen and (min-width: 40em) {
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline:before {
+    left: 50%;
+}
+.timeline ul {
+    padding-left: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.timeline li {
+    width: 42%;
+}
+.timeline li:nth-child(even) {
+    float: right;
+    margin-top: 2em;
+}
+.timeline li:nth-child(odd) {
+    float: left;
+}
+.timeline li:nth-child(odd):before {
+    border-top: 1em solid #dddddd;
+    border-right: 1em solid transparent;
+    right: -1em;
+    left: auto;
+}
+.timeline li:nth-of-type(2n+1) {
+    clear: both;
+}
+}
 
 @media only screen and (max-width:767px){
     .nav-tabs{
