@@ -1,6 +1,6 @@
 title: sakethramanujam
-baseurl: "/saketh" # the subpath of your site, e.g. /blog
-url: "http://nerdsof.tech" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/saketh"
+url: "https://nerdsof.tech" 
 # Build settings
 markdown: kramdown
 theme: minima
