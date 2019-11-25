@@ -1,6 +1,6 @@
 title: sakethramanujam
-baseurl: "/saketh"
-url: "https://nerdsof.tech" 
+baseurl: ""
+url: "https://perceptiveproton.me" 
 # Build settings
 markdown: kramdown
 theme: minima
