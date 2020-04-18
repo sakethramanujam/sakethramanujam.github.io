@@ -1,0 +1,27 @@
+.page{
+    margin-top: 10vh;
+}
+
+.page>.cv{
+    text-align: left;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+@media screen and (max-width : 320px){
+    .page>.cv>h1{
+        font-size: small;
+    }
+    .page>.cv>p{
+        font-size:small;
+    }
+}  
+
+@media screen and (max-width : 1024px){
+    .page>.cv>h1{
+        font-size: 22px;
+    }
+    .page>.cv>p{
+        font-size:15px
+    }
+}

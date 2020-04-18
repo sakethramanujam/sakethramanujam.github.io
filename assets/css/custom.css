@@ -1,244 +1,104 @@
-body{
-    background-color: #252830;  
-    font-family: 'Exo 2','Satisfy', sans-serif;
-}
-.body-container{
-    height: 100%;
+body {
+  background-color: #252830;
+  font-family: "Exo 2", "Satisfy", sans-serif;
 }
 
-a{
-    text-decoration: none!important;
-}
-.nav>.nav-tabs{
-    height:15vh ;
-    align-items: center;
-    
-    ;
-    overflow: hidden;
-}
-.nav-item{
-    width: 25%;
-    text-align: center;
-    color: white;
-}
-.home{
-    margin-top: 25%;
-    text-align: center;
-    color: white;
-    
-}
-.nav-tabs{
-    background-color: #212121;
-}
-#home-tab.active{
-    background-color: yellow;
-}
-#projects-tab.active{
-    background-color: orangered;
-    color: white;
-}
-#projects>.container{
-    width: auto;
-    margin-top: 45vh;
-    max-width: 680px;
-    padding: 0 15px;
-    color:white;
-    align-content: center;
-    text-align: center;
- }
- #blog>.container{
-    width: auto;
-    margin-top: 45vh;
-    max-width: 680px;
-    padding: 0 15px;
-    color:white;
-    align-content: center;
-    text-align: center;
- }
-#name{
-    font-family: Satisfy;
+a {
+  text-decoration: none !important;
 }
 
-.center {
-    margin: 10%;
-    padding: 10px;
-    align-content:center;
-    background-color: none;
-    
+main{
+  min-height: calc(100vh-60px);
 }
-.card{
-    background:rgba(37, 40, 48, 0.2);
-    border: none;
+.navbar > a {
+  width: 40px;
 }
 
-.card-header{
-    background:rgba(37, 40, 48, 0.2);
-    color: white;
-    font-family: Source Code Pro; 
-    text-align: center;  
-    border:none;
-    display: none;
-}
-#hello{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 35px;
-    color:orange;
-}
-#college {
-    text-decoration: none;
-    color: orangered;
-}
-#sirc{
-    text-decoration: none;
-    color:lightblue;
-}
-#music{
-    color:yellow;
-}
-#about{
-    font-size:17px;
-    color: white;
+.bg-custom {
+  background-color: #252830 !important;
 }
 
-#fandom{
-    font-size:16px;
-    color: white;
-}
-#scifi{
-    color:yellowgreen;
-}
-#teachme{
-    color:white;
-    text-emphasis: strong;
-    font-size: 17px;
-}
-#warning{
-    color:red;
-}
-#contact{
-    color: white!important;
-    align-content: center;
-    text-align: center;
-    font-size:25px;
-}
-#contact>a{
-    text-decoration: none!important;
-}
-.footer{
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    align-content: center;
-    text-align: center;
-    margin-bottom: 0px;
-    font-family: roboto;
-    font-size: auto;
-    background:rgba(37, 40, 48, 1);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
- #projects>.container{
-    margin-top: 10vh!important;
-    width: auto;
-    max-width: 680px;
-    padding: 0 15px;
-    color:#007bff;
-    text-decoration: none!important;
-    
- }
-
-h1, h2, h3 {
-font-weight: 300;
+.page {
+  margin-top: 10vh;
+  color: white;
+  align-content: center;
 }
 
-.timeline {
-position: relative;
-overflow: auto;
+.pagecontent {
+  min-height: calc(100vh - 40px - 27px);
 }
-.timeline:before {
-content: '';
-position: absolute;
-height: 100%;
-width: 5px;
-background: #dfdfdf;
-left: 0;
-}
-.timeline h2 {
-background: #dddddd;
-max-width: 6em;
-margin: 0 auto 1em;
-padding: 0.5em;
-text-align: center;
-position: relative;
-clear: both;
-}
-.timeline ul {
-list-style: none;
-padding: 0 0 0 1em;
-z-index: 1;
-}
-.timeline li {
-background: #dddddd;
-padding: 1em;
-margin-bottom: 1em;
-position: relative;
-width: auto;
-}
-.timeline li:before {
-content: '';
-width: 0;
-height: 0;
-border-top: 1em solid #dddddd;
-border-left: 1em solid transparent;
-position: absolute;
-left: -1em;
-top: 0;
-}
-.timeline h3 {
-margin-top: 0;
-}
-.timeline time {
-font-style: italic;
+.home {
+  max-width: 980px;
+  margin: auto;
 }
 
-@media screen and (min-width: 40em) {
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
+.page > .home > img {
+  margin-left: 22vw;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.timeline:before {
-    left: 50%;
-}
-.timeline ul {
-    padding-left: 0;
-    max-width: 700px;
-    margin: 0 auto;
-}
-.timeline li {
-    width: 42%;
-}
-.timeline li:nth-child(even) {
-    float: right;
-    margin-top: 2em;
-}
-.timeline li:nth-child(odd) {
-    float: left;
-}
-.timeline li:nth-child(odd):before {
-    border-top: 1em solid #dddddd;
-    border-right: 1em solid transparent;
-    right: -1em;
-    left: auto;
-}
-.timeline li:nth-of-type(2n+1) {
-    clear: both;
-}
+.page > .home > h1,
+h2 {
+  text-align: center;
+  font-family: "Cantata One", Constantia, "Lucida Bright", Lucidabright,
+    "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif",
+    "Liberation Serif", Georgia, serif;
 }
 
-@media only screen and (max-width:767px){
-    .nav-tabs{
-        bottom:0;
-    }
+.page > .home > h2 > span {
+  color: orange;
+}
+
+.post {
+  text-align: left;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+footer {
+  background-color: #252830;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+footer > .wrapper > p {
+  font-size: large;
+}
+
+@media screen and (max-width: 720px) {
+  .navbar {
+    font-size: small;
+  }
+  .home > h1,
+  h2 {
+    font-size: 12px;
+  }
+  .home > h2 > span {
+    font-size: 10px;
+  }
+  footer > .wrapper > p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page > .posts > h1 {
+    font-size: small;
+  }
+  .home > h1,
+  h2 {
+    font-size: 23px;
+  }
+  .home > h2 > span {
+    font-size: 20px;
+  }
+  footer > .wrapper > p {
+    font-size: 15px;
+  }
 }

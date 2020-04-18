@@ -1,0 +1,17 @@
+---
+layout: blog-default
+---
+<div class="page">
+    {% assign sorted_posts = site.posts | sort:'date' | reverse %}
+    <article class="posts">
+        <h1> Posts</h1>
+        <hr>
+        {% for post in sorted_posts %}
+        <div class="post-item">
+            <h1><a href="{{site.baseurl}}{{ post.url }}"> {{ post.title }}</a></h1>
+            <p id="date">{{post.date | date_to_xmlschema }}</p>
+            <p>{{post.shortdesc}}</p>
+        </div>
+        {% endfor %}
+    </article>
+</div>

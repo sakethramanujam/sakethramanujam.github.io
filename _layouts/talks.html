@@ -1,0 +1,14 @@
+---
+layout: blog-default
+---
+<div class="page">
+    <article class="talks">
+        <h1>Talks</h1>
+        <hr>
+        {% assign talks = site.data.talks | sort : 'date'  | reverse %}
+        {% for talk in talks %}
+        <a href="{{talk.link}}"><h1>{{talk.title}}</h1></a>
+        <p>{{talk.date}} | {{talk.org}}</p>
+        {% endfor %}
+    </article>
+</div>

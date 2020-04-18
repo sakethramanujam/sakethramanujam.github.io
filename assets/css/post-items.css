@@ -1,0 +1,57 @@
+.page > .posts {
+  text-align: left;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+.page > .posts > .post-item {
+  margin-left: 2em;
+}
+
+.page > .posts > .post-item > h1 > a {
+  color: green !important;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+.page > .posts > .post-item > h1 > a:hover {
+  color: blue !important;
+  background-color: grey;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+.page > .posts > .post-item > #date {
+  font-size: 1em;
+  color: grey !important;
+  margin: 0px !important;
+}
+
+@media screen and (max-width : 320px){
+  .page > .posts{
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .page > .posts > h1{
+    font-size: small;
+  }
+  .page > .posts > .post-item{
+    font-size: small;
+  }
+}
+
+@media screen and (max-width : 1024px){
+  .page > .posts{
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .page > .post-item{
+    margin-left: none;
+  }
+  .page > .posts > h1{
+    font-size: 25px;
+  }
+  .page > .posts > .post-item >h1{
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,59 @@
+.page > .talks {
+    text-align: left;
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+
+.page>.talks>a{
+    color: white;
+}
+
+.page>.talks>a:hover{
+    color: green;
+}
+
+
+.page>.talks>a>h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width : 320px){
+    .page > .talks{
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+    .page > .talks > h1{
+      font-size: 15px;
+    }
+    .page > .talks > a > h1{
+        font-size: 15px;
+      }
+  }
+  
+  @media screen and (max-width : 720px){
+    .page > .talks{
+      margin-left: 7.5vw;
+      margin-right: 7.5vw;
+    }
+    .page > .talks > h1{
+      font-size: 20px;
+    }
+    .page > .talks > a > h1{
+        font-size: 20px;
+      }
+  }
+
+
+  @media screen and (max-width : 1024px){
+    .page > .talks{
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+    .page > .talks > h1{
+      font-size: 30px;
+    }
+    .page > .talks > a>  h1{
+        font-size: 25px;
+      }
+  }
+  

@@ -1,0 +1,13 @@
+.page>.post>.post-content>p>img{
+    width: 50vw;
+}
+
+
+@media screen and (max-width:1024px) {
+  .page>.post > h1 {
+    font-size: 25px;
+  }
+  .page>.post>.post-content>p>img{
+      width: 50vw;
+  }
+}
