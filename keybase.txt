@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/perceptiveproton
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://perceptiveproton.me
+  * I am perceptiveproton (https://keybase.io/perceptiveproton) on keybase.
+  * I have a public key ASAgyxmkuPPCvvhoeMZv_mDUZLmshO9Wosr1ebwUIF118Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ae4e427429b37411618c66d7ac9b5aa47dd98b5b9917a7c9fc72564c1e3321290a",
+      "host": "keybase.io",
+      "kid": "012020cb19a4b8f3c2bef86878c66ffe60d464b9ac84ef56a2caf579bc14205d75f10a",
+      "uid": "7d2725c63da179b3aa271954dfb99619",
+      "username": "perceptiveproton"
+    },
+    "merkle_root": {
+      "ctime": 1587682373,
+      "hash": "8b75fb2253d7817287e06f6d3b77da29ee06303a3f5eda542796047cbf1eddfdf7630b405b6bbdc07facfc40ac371a7a1a355bf31e58b7bbcab137abad5da480",
+      "hash_meta": "e0e10a2f610429459ff00d52de188394907a575e1f780f5e130ec57ed955af35",
+      "seqno": 16031295
+    },
+    "service": {
+      "entropy": "P9g4oyyKZ1pTFcRKIJTHinyw",
+      "hostname": "perceptiveproton.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.0"
+  },
+  "ctime": 1587682412,
+  "expire_in": 504576000,
+  "prev": "6dba55f9fdaef4f20062dd7eb50e058ff0f9421c6be5b08cb027c9ca391c74b4",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgIMsZpLjzwr74aHjGb/5g1GS5rITvVqLK9Xm8FCBddfEKp3BheWxvYWTESpcCDMQgbbpV+f2u9PIAYt1+tQ4Fj/D5Qhxr5bCMsCfJyjkcdLTEIBMwmo/pXhHnGdo/xesqalreW30xPKWqLvhDn4Zlqif0AgHCo3NpZ8RAnmJKEsZ//tqOg3iZkx6B3KA3uhGr2rVD45W0ha7HQybPvJhwatLdrZHdMigjtfhyrkp0k4BnzRReInsGu28zA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFEUxd3so7OdWxQqurULMBEdQEtMdoQ429yHASMwfYS2o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/perceptiveproton
+
+==================================================================
