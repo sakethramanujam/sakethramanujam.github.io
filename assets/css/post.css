@@ -1,13 +1,24 @@
-.page>.post>.post-content>p>img{
-    width: 50vw;
+
+.post{
+  max-width: 60vw;
 }
 
-
-@media screen and (max-width:1024px) {
-  .page>.post > h1 {
-    font-size: 25px;
+@media screen and (max-width: 360px) {
+  .page > .post > h1 {
+    font-size: 10px;
   }
-  .page>.post>.post-content>p>img{
-      width: 50vw;
+
+}
+
+@media screen and (max-width: 720px) {
+  .post > h1{
+      font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .page > .post > h1 {
+    font-size: 25px;
   }
 }

@@ -2,12 +2,23 @@ title: sakethramanujam
 baseurl: ""
 url: "https://perceptiveproton.me" 
 # Build settings
-markdown: kramdown
-theme: minima
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  
 plugins:
   - jekyll-feed
-  - jemoji
+
+collections:
+  posts:
+    output: true
+    type: page
+    permalink: /blog/:title/
+    
+
+
 disqus:
   shortname: protonblog
-permalink: /blog/:title/
-  
+

@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
 {%- include head.html -%}
-
-<body>
-    <header>
-        <div class="wrapper">
-            <section>
-                {% include navigation.html %}
-            </section>
-        </div>
-    </header>
-    <section>
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-                {{ content }}
-            </div>
-        </main>
-    </section>
-</body>
-
-</html>
+<header>
+    <div class="wrapper">
+        <section>
+            {% include navigation.html %}
+        </section>
+    </div>
+</header>
+<div role="main">
+    <div class="clearfix content">
+            {{ content }}
+    </div>
+</div>

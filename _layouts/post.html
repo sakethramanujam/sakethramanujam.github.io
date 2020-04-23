@@ -1,40 +1,51 @@
 ---
+title : {{page.title}}
 layout: blog-default
 ---
-<div class="page">
-  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <header class="post-header">
-      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-      <p class="post-meta">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {{ page.date | date: date_format }}
-        </time>
-        {%- if page.modified_date -%}
-        ~
-        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
-        </time>
-        {%- endif -%}
-        {%- if page.author -%}
-        • {% for author in page.author %}
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-        {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-        {%- endif -%}</p>
-    </header>
-
-    <div class="post-content e-content" itemprop="articleBody">
-      {{ content }}
+<div class="page container-lg p-responsive pb-md-6">
+  <div class="post">
+    <h1>{{ page.title | escape }}</h1>
+    <p class="date">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <time datetime="{{ page.date | date: "%F" }}">
+        {{ page.date | date: date_format }}
+      </time>
+    </p>
+    {{ page.content }}
+    <div class="PageNavigation">
+      {% if page.previous.url %}
+      <a class="btn btn-outline-light btn-sm float-left" href="{{page.previous.url}}">&laquo;
+        {{page.previous.title}}
+      </a>
+      {% endif %}
+      {% if page.next.url %}
+      <a class="btn btn-outline-light btn-sm float-right" href="{{page.next.url}}">
+        {{page.next.title}} &raquo;
+      </a>
+      {% endif %}
     </div>
-
+    <br>
+    <hr color="#252830">
+    <div>
+      <a class="btn btn-primary" href="/feed.xml" target="_blank">
+      <img 
+      src="https://images.vexels.com/media/users/3/131980/isolated/preview/00204564462763e16a3d4f9fd3aeceb0-rss-ring-icon-by-vexels.png"
+      width="25px">
+        RSS
+      </a>
+    </div>
     {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
     {%- endif -%}
-
-    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-  </article>
+  </div>
 </div>
+
+<script>
+  const imgs = document.querySelectorAll('.post>p>img');
+  imgs.forEach(Element => {
+    Element.setAttribute('class', 'img-fluid')
+    Element.setAttribute('align', 'center!important')
+    Element.setAttribute('width', '100%')
+  });
+</script>
