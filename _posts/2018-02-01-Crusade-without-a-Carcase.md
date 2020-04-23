@@ -6,6 +6,7 @@ categories: philosophy
 author: saketharamanujam
 ---
 ![Guernica](https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555443607/shape/mentalfloss/98645794uhye.png)
+
 `War, a word that immobilizes the thought process without any speculation doesn’t only refer to the act of bloodshed, a loss of personnel or something personal; it may also refer to something that doesn’t really take lives straight away while it still does seem like the same. Every other day, every individual amongst us wages at least one, like,deciding on something that has been lingering around for quite some time. These wars are a state of mind.
 
 Why the word WAR for a state of mind? Why the word war for something with no contention of forceful violence? War, is an art, a convulsive and violent disease of the body politic; sometimes a delusive methodology, which is used as a coup for achieving things which are otherwise unattainable.This sums up to a thought that we often enter deadlocks within our own self without any reason. That’s when we realize there's something beyond our bounds happening with in the nutshell beneath the vertex.

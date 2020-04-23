@@ -1,6 +1,5 @@
 ---
 layout: post
-comments: true
 title:  "Who's an Astronomer?"
 date:   2017-10-27 +0530
 categories: astronomy

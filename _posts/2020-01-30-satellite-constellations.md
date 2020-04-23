@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Satellite Constellations"
-date:   2020-01-30 +0530
+title:  An astronomers beef with Satellite Constellations
+date:   2020-04-23 +0530
 categories: astronomy
 author: saketharamanujam
 ---
