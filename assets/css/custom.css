@@ -1,6 +1,7 @@
 body {
   background-color: #252830;
   font-family: "Exo 2", "Satisfy", sans-serif;
+  overflow-x: hidden!important;
 }
 
 a {
@@ -10,8 +11,9 @@ a {
 main{
   min-height: calc(100vh-60px);
 }
+
 .navbar > a {
-  width: 40px;
+  width: auto;
 }
 
 .bg-custom {
@@ -54,21 +56,8 @@ h2 {
 
 .post {
   text-align: left;
+  background-color:rgba(37, 40, 48, 0.9);
   margin-left: 25vw;
-  margin-right: 25vw;
-}
-
-footer {
-  background-color: #252830;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
-
-footer > .wrapper > p {
-  font-size: large;
 }
 
 @media screen and (max-width: 720px) {
@@ -97,8 +86,5 @@ footer > .wrapper > p {
   }
   .home > h2 > span {
     font-size: 20px;
-  }
-  footer > .wrapper > p {
-    font-size: 15px;
   }
 }
