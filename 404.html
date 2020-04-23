@@ -1,20 +1,51 @@
+---
+layout: default
+---
 <style type="text/css" media="screen">
   .container {
-    margin: 10px auto;
+    padding-top: 25vh;
+    color: white;
     max-width: 600px;
     text-align: center;
   }
+  #randomI>img{
+    max-width: 50%;
+  }
+
   h1 {
     margin: 30px 0;
     font-size: 4em;
     line-height: 1;
     letter-spacing: -1px;
   }
+
+  #randomQ{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
 </style>
 
 <div class="container">
+  <div id="randomI"></div>
   <h1>404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p id="randomQ"></p>
 </div>
+
+<script>
+  const quotes = ["Seem's like you've hit a singularity",
+    "What's not there cannot be found",
+    "Just like a dreadful void",
+    "What you seek is seeking a blackhole",
+    "What goes in comes out, only in your dreams"]
+  var quote = quotes[Math.floor(Math.random() * quotes.length)];
+  const ims = ["https://imgflip.com/s/meme/Captain-Picard-Facepalm.jpg",
+  "https://brightideamarketing.com/wp-content/uploads/2018/04/Meme-s-Facepalm-Meme-Decal-768x768.jpg",
+  "https://img.pngio.com/lit-literature-pepe-meme-facepalm-free-transparent-png-facepalm-transparent-background-820_756.png",
+  "https://www.meme-arsenal.com/memes/a0b1bf79681af94f7fc5f0302bb7a726.jpg"]
+  var link = ims[Math.floor(Math.random() * ims.length)]
+  document.getElementById('randomQ').innerText = quote;
+  var img = document.createElement("img")
+  img.src = link
+  document.getElementById('randomI').appendChild(img)
+</script>
