@@ -4,11 +4,12 @@ layout: blog-default
 <div class="page">
     <article class="talks">
         <h1>Talks</h1>
-        <hr>
+        <hr color="white">
         {% assign talks = site.data.talks | sort : 'date'  | reverse %}
         {% for talk in talks %}
         <a href="{{talk.link}}"><h1>{{talk.title}}</h1></a>
-        <p>{{talk.date}} | {{talk.org}}</p>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <p id="date" datetime="{{talk.date | date_to_xmlschema}}">{{talk.date | date: date_format}} | {{talk.org}}</p>
         {% endfor %}
     </article>
 </div>
