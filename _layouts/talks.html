@@ -1,7 +1,7 @@
 ---
 layout: blog-default
 ---
-<div class="page">
+<div class="page pb-md-6">
     <article class="talks">
         <h1>Talks</h1>
         <hr color="white">
@@ -12,4 +12,11 @@ layout: blog-default
         <p id="date" datetime="{{talk.date | date_to_xmlschema}}">{{talk.date | date: date_format}} | {{talk.org}}</p>
         {% endfor %}
     </article>
+    <div class="default-footer">
+        <div class="wrapper d-flex justify-content-center">
+            <p class="copyright">
+                copyright &copy; 2020 by Saketha Ramanujam
+            </p>
+        </div>
+    </div> 
 </div>

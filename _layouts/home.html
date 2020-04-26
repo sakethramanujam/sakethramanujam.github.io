@@ -4,15 +4,51 @@ layout: default
 <div class="page">
     <article class="home">
         <img class='dp' src="https://res.cloudinary.com/stuartlittle/image/upload/v1587120916/me/ID.jpg"
-            alt="sakethocat" , width="15%">
-        <h1>Hola!
-            I'm Saketha Ramanujam
-        </h1>
+            alt="sakethocat" , width="80vw">
+        <h2>Hola!</h2>
+        <h1> I'm Saketha Ramanujam</h1>
         <h2>I'm
-            <span class="txt-rotate" data-period="1000"
-                data-rotate='["an Electronics Engineer", "an Astronomy Enthusiast", "a Researcher", "a Musician"]'></span>
+            <span class="txt-rotate" data-period="1000" data-rotate='["an Electronics Engineer", 
+                "an Astronomy Enthusiast", 
+                "a Researcher", 
+                "a Musician"]'></span>  
         </h2>
+        <div class="fasome d-flex justify-content-center">
+            {% for social in site.data.fasome %}
+            <a href="{{social.link}}" target="_blank">
+                <i class="{{social.icon}}"></i>
+            </a>
+            {% endfor %}
+            <a href="mailto:saketh.ramanujam98@hotmail.com">
+                <i class="fas fa-envelope-square"></i>
+            </a>
+        </div>
+        <div class="additionals">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <a href="{{site.baseurl}}/cv">
+                        <h4>cv</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <a href="{{site.baseurl}}/talks">
+                        <h4>talks</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
     </article>
+    <div class="default-footer">
+        <div class="d-flex justify-content-center">
+            <p class="copyright">
+                copyright &copy; 2020 by Saketha Ramanujam
+            </p>
+        </div>
+    </div>
+</div>
+
 </div>
 <script>
     var TxtRotate = function (el, toRotate, period) {

@@ -1,14 +1,23 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
   background-color: #252830;
   font-family: "Exo 2", "Satisfy", sans-serif;
-  overflow-x: hidden!important;
+  overflow-x: hidden !important;
 }
 
 a {
   text-decoration: none !important;
 }
 
-main{
+main {
   min-height: calc(100vh-60px);
 }
 
@@ -29,17 +38,32 @@ main{
 .pagecontent {
   min-height: calc(100vh - 40px - 27px);
 }
+
 .home {
   max-width: 980px;
   margin: auto;
 }
 
+.fasome > a > i {
+  text-decoration: none !important;
+  color: white;
+  font-size: 1.5em;
+  margin-right: 10px;
+  margin-top: 3px;
+}
 .page > .home > img {
   margin-left: 22vw;
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.additionals {
+  margin-top: 2em;
+}
+.additionals > .row > .col > a {
+  color: white;
 }
 
 .page > .home > h1,
@@ -56,8 +80,8 @@ h2 {
 
 .post {
   text-align: left;
-  background-color:rgba(37, 40, 48, 0.9);
-  margin-left: 25vw;
+  background-color: rgba(37, 40, 48, 0.9);
+  margin-left: 22vw;
 }
 
 @media screen and (max-width: 720px) {
@@ -87,4 +111,47 @@ h2 {
   .home > h2 > span {
     font-size: 20px;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.default-footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  color: wheat;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.blog-footer {
+  bottom: 0;
+  height: 60px;
+  color: wheat;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
 }

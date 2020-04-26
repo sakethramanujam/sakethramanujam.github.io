@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Who's an Astronomer?"
+comments: true
 date:   2017-10-27 +0530
 categories: astronomy
 author: saketharamanujam

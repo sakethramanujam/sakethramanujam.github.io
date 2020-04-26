@@ -1,8 +1,9 @@
 .posts {
-  background-color:rgba(37, 40, 48, 0.6)
+  background-color:rgba(37, 40, 48, 0.6);
   text-align: left;
   margin-left: 25vw;
   margin-right: 25vw;
+  margin-bottom: 2em;
 }
 
 .posts > .post-item {
@@ -53,9 +54,9 @@
     margin-left: none;
   }
   .page > .posts > h1{
-    font-size: 25px;
+    font-size: 20px;
   }
   .page > .posts > .post-item >h1{
-    font-size: 25px;
+    font-size: 20px;
   }
 }

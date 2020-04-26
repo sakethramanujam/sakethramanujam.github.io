@@ -1,5 +1,4 @@
 ---
-title : {{page.title}}
 layout: blog-default
 ---
 
@@ -15,7 +14,8 @@ layout: blog-default
     {{ page.content }}
     <div class="PageNavigation">
       {% if page.previous.url %}
-      <a class="btn btn-outline-light btn-sm float-left" href="{{page.previous.url}}">&laquo;
+      <a class="btn btn-outline-light btn-sm float-left" href="{{page.previous.url}}">
+        &laquo;
         {{page.previous.title}}
       </a>
       {% endif %}
@@ -29,9 +29,9 @@ layout: blog-default
     <hr color="#252830">
     <div>
       <a class="btn btn-primary" href="/feed.xml" target="_blank">
-      <img 
-      src="https://images.vexels.com/media/users/3/131980/isolated/preview/00204564462763e16a3d4f9fd3aeceb0-rss-ring-icon-by-vexels.png"
-      width="25px">
+        <img
+          src="https://images.vexels.com/media/users/3/131980/isolated/preview/00204564462763e16a3d4f9fd3aeceb0-rss-ring-icon-by-vexels.png"
+          width="25px">
         RSS
       </a>
     </div>
@@ -39,6 +39,14 @@ layout: blog-default
     {%- include disqus_comments.html -%}
     {%- endif -%}
   </div>
+  <div class="blog-footer">
+    <div class="wrapper d-flex justify-content-center">
+      <p class="copyright">
+        copyright &copy; 2020 by Saketha Ramanujam
+      </p>
+    </div>
+  </div>
+
 </div>
 
 <script>

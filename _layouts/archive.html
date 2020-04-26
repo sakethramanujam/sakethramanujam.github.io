@@ -2,14 +2,14 @@
 title : Archive
 layout: blog-default
 ---
-<div class="page ">
+<div class="page container-lg pb-md-6">
     {% assign sorted_posts = site.posts | sort:'date' | reverse %}
     <article class="posts">
         <h1> Archive </h1>
         <hr color="white">
         {% for post in sorted_posts %}
         <div class="post-item">
-            <h1><img src="https://pngimg.com/uploads/mars_planet/mars_planet_PNG18.png" width="10vw%">
+            <h1><img src="https://res.cloudinary.com/stuartlittle/image/upload/q_26/v1587837325/me/mars-min-2.png" width="10vw%">
                 <a href="{{site.baseurl}}{{ post.url }}">
                     {{ post.title }}
                 </a>

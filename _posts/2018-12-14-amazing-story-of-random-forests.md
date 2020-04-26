@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Amazing story of Random Forests!"
+comments: true
 date:   2018-12-14 12:00:00 +0530
 categories: machinelearning science
 author: saketharamanujam
