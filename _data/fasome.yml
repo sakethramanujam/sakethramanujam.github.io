@@ -1,0 +1,30 @@
+- social:
+  platform: twitter
+  link: https://twitter.com/protonbot_1729
+  icon: fab fa-twitter
+- social:
+  platform: github
+  link: https://github.com/sakethramanujam
+  icon: fab fa-github
+- social:
+  platform: linkedin
+  link: https://www.linkedin.com/in/saketha-r-2441a5113
+  icon: fab fa-linkedin
+- social:
+  platform: stackoverflow
+  link: https://stackoverflow.com/users/8599077/saketha-ramanujam
+  icon: fab fa-stack-overflow
+- social:
+  platform: reddit
+  link: https://www.reddit.com/user/sakethr98
+  icon: fab fa-reddit
+- social:
+  platform: keybase
+  link: https://keybase.io/perceptiveproton 
+  icon: fab fa-keybase
+- social:
+  platform: instagram
+  link: https://www.instagram.com/perceptive_proton/
+  icon: fab fa-instagram
+
+    

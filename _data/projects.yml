@@ -1,0 +1,18 @@
+- project: 
+  name: PriPy
+  desc: Printing Client for Raspberry Pi, Send Email get your attachments printed!
+- project: 
+  name: The-Todo-Multiverse
+  desc: All possible versions of the todo App!
+- project: 
+  name: gazetracker
+  desc: A gaze tracking application that gives you awesome heatmaps!
+- project: 
+  name: fortune-teller
+  desc: A simple slack webhook action for fortune-mod
+- project: 
+  name: naas-docker
+  desc: notebook as a service on local server
+- project: 
+  name: snapi-launch-notif-server
+  desc: Launch notifications for snapi discord bot

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="page contiainer-lg pb-md-6">
+    <article class="timeline">
+        <h1> Pinned Projects</h1>
+        <hr color="white">
+        {% assign projects = site.data.projects %}
+        {% for project in projects %}
+        <a href="{{project.link}}"><h1>{{project.name}}</h1></a>
+        <p>{{ project.desc }}</p>
+        {% endfor %}
+    </article>
+</div>
