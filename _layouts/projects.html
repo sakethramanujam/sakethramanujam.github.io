@@ -7,7 +7,7 @@ layout: default
         <hr color="white">
         {% assign projects = site.data.projects %}
         {% for project in projects %}
-        <a href="{{project.link}}"><h1>{{project.name}}</h1></a>
+        <a href="https://github.com/sakethramanujam/{{project.name}}" target="_blank"><h1>{{project.name}}</h1></a>
         <p>{{ project.desc }}</p>
         {% endfor %}
     </article>
