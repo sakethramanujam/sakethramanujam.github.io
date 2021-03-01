@@ -1,6 +1,9 @@
 - project: 
-  name: PriPy
-  desc: Printing Client for Raspberry Pi, Send Email get your attachments printed!
+  name: percy-image-downloader
+  desc: CLI for downloading images from NASA Mars 2020 Mission Rover's website
+- project:
+  name: cpcb-ccr-client
+  desc: Python package for loading air quality data from CPCB Central Control Website.
 - project: 
   name: The-Todo-Multiverse
   desc: All possible versions of the todo App!
@@ -13,6 +16,3 @@
 - project: 
   name: naas-docker
   desc: notebook as a service on local server
-- project: 
-  name: snapi-launch-notif-server
-  desc: Launch notifications for snapi discord bot
