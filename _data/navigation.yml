@@ -1,4 +1,7 @@
 - name: blog
   link: /blog
+- name: lablog
+  link: /lablog
 - name: projects
   link: /projects
+ 
