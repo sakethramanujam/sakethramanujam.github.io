@@ -217,9 +217,9 @@ h1, h2, h3, h4 {
 .home img.dp {
   width: 100px;
   height: 100px;
+  flex-shrink: 0;
   border: none;
   padding: 0;
-  margin-bottom: 20px;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
@@ -231,6 +231,7 @@ h1, h2, h3, h4 {
 .home h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 .home h2 {
@@ -238,6 +239,19 @@ h1, h2, h3, h4 {
   font-weight: 400;
   color: #888;
   margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .home img.dp {
+    width: 80px;
+    height: 80px;
+  }
+  .home h1 {
+    font-size: 1.5rem;
+  }
+  .home h2 {
+    font-size: 0.9rem;
+  }
 }
 
 .fasome {
