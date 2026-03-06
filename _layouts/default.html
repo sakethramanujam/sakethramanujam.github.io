@@ -25,5 +25,26 @@
     </main>
 
     {% include footer.html %}
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('navbar-scrolled');
+            } else {
+                nav.classList.remove('navbar-scrolled');
+            }
+        });
+
+        // Also handle the mobile menu being opened
+        $('.navbar-collapse').on('show.bs.collapse', function () {
+            document.querySelector('.navbar').classList.add('navbar-scrolled');
+        });
+        $('.navbar-collapse').on('hide.bs.collapse', function () {
+            if (window.scrollY <= 50) {
+                document.querySelector('.navbar').classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
