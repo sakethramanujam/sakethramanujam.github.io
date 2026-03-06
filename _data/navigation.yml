@@ -3,13 +3,13 @@
   icon: "fas fa-home"
 - name: experience
   link: "/#experience"
-  icon: "fas fa-user-astronaut"
+  icon: "fas fa-briefcase"
 - name: blog
   link: "/#blog"
-  icon: "fas fa-comet"
+  icon: "fas fa-meteor"
 - name: projects
   link: "/#projects"
-  icon: "fas fa-satellite"
+  icon: "fas fa-satellite-dish"
 - name: talks
   link: "/#talks"
-  icon: "fas fa-broadcast-tower"
+  icon: "fas fa-microphone-alt"
