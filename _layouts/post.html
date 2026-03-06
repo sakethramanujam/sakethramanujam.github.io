@@ -4,51 +4,55 @@ layout: blog-default
 
 <div class="page pb-5">
   <div class="content-container">
-    <div class="post shadow-lg">
-      <div class="post-header text-center mb-5">
-      <h1 class="display-4 font-weight-bold mb-3" style="color: #ff9800;">{{ page.title | escape }}</h1>
-      <time class="text-muted text-uppercase letter-spacing-2" datetime="{{ page.date | date: "%F" }}">
-        <i class="far fa-calendar-alt mr-2"></i> {{ page.date | date: "%B %-d, %Y" }}
-      </time>
-    </div>
+    <article class="post">
+      <header class="post-header">
+        <div class="date mb-2">
+          <i class="far fa-calendar-alt mr-2"></i> {{ page.date | date: "%Y %b %-d" }}
+        </div>
+        <h1><span class="section-icon">☄️</span>{{ page.title | escape }}</h1>
+      </header>
 
-    <div class="post-content mt-4" style="line-height: 1.8; font-size: 1.1rem; color: #d0d0d0;">
-      {{ page.content }}
-    </div>
+      <div class="post-content">
+        {{ page.content }}
+      </div>
 
-    <hr class="my-5" style="border-top: 1px solid rgba(255,255,255,0.1);">
+      <nav class="PageNavigation d-flex justify-content-between">
+        <div class="prev">
+          {% if page.previous.url %}
+          <a href="{{site.baseurl}}{{page.previous.url}}">
+            <i class="fas fa-chevron-left mr-2"></i> {{page.previous.title}}
+          </a>
+          {% endif %}
+        </div>
+        <div class="next">
+          {% if page.next.url %}
+          <a href="{{site.baseurl}}{{page.next.url}}">
+            {{page.next.title}} <i class="fas fa-chevron-right ml-2"></i>
+          </a>
+          {% endif %}
+        </div>
+      </nav>
 
-    <div class="PageNavigation d-flex justify-content-between">
-      {% if page.previous.url %}
-      <a class="btn btn-outline-warning btn-sm" href="{{page.previous.url}}">
-        <i class="fas fa-chevron-left mr-2"></i> {{page.previous.title}}
-      </a>
-      {% endif %}
-      {% if page.next.url %}
-      <a class="btn btn-outline-warning btn-sm" href="{{page.next.url}}">
-        {{page.next.title}} <i class="fas fa-chevron-right ml-2"></i>
-      </a>
-      {% endif %}
-    </div>
+      <div class="post-footer-cta">
+        <p class="mb-4">Thanks for reading. You can follow more of my work on GitHub or reach out via Email.</p>
+        <a class="btn btn-outline-warning" href="{{site.baseurl}}/#blog">
+          <i class="fas fa-arrow-left mr-2"></i> Back to Blog
+        </a>
+      </div>
 
-    <div class="mt-5 text-center">
-      <a class="btn btn-primary px-4" href="/feed.xml" target="_blank">
-        <i class="fas fa-rss mr-2"></i> Subscribe via RSS
-      </a>
-    </div>
-
-    {%- if site.disqus.shortname -%}
-    <div class="mt-5 pt-4 border-top border-secondary">
-      {%- include disqus_comments.html -%}
-    </div>
-    {%- endif -%}
-  </div>
+      {%- if site.disqus.shortname -%}
+      <div class="mt-5 pt-4 border-top border-secondary">
+        {%- include disqus_comments.html -%}
+      </div>
+      {%- endif -%}
+    </article>
   </div>
 </div>
 
 <script>
+  // Ensure all images are responsive
   const imgs = document.querySelectorAll('.post-content img');
   imgs.forEach(img => {
-    img.classList.add('img-fluid', 'rounded', 'my-4', 'mx-auto', 'd-block', 'shadow');
+    img.classList.add('img-fluid');
   });
 </script>

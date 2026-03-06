@@ -1,24 +1,97 @@
-
-.post{
-  max-width: 60vw;
+/* Post Content Styling */
+.post {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
 }
 
-@media screen and (max-width: 360px) {
-  .page > .post > h1 {
-    font-size: 10px;
-  }
-
+.post-header {
+  margin-bottom: 3rem;
+  text-align: left;
 }
 
-@media screen and (max-width: 720px) {
-  .post > h1{
-      font-size: 15px;
-    }
-
+.post-header h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  color: #fff;
+  line-height: 1.2;
 }
 
-@media screen and (max-width: 1024px) {
-  .page > .post > h1 {
-    font-size: 25px;
-  }
+.post-header .date {
+  font-family: monospace;
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.post-content h1, 
+.post-content h2, 
+.post-content h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.post-content h2 { font-size: 1.8rem; }
+.post-content h3 { font-size: 1.4rem; }
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-content blockquote {
+  border-left: 3px solid #ff9800;
+  padding-left: 20px;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #aaa;
+}
+
+.post-content ul, 
+.post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content img {
+  border-radius: 12px;
+  margin: 2.5rem auto;
+  display: block;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.PageNavigation {
+  border-top: 1px solid #222;
+  padding-top: 2rem;
+  margin-top: 4rem;
+}
+
+.PageNavigation a {
+  text-decoration: none !important;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.PageNavigation a:hover {
+  color: #ff9800;
+}
+
+.post-footer-cta {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: rgba(255, 152, 0, 0.05);
+  border-radius: 16px;
 }
