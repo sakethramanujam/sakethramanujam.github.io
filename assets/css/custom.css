@@ -414,6 +414,44 @@ h1, h2, h3, h4 {
   filter: drop-shadow(0 0 5px rgba(255, 152, 0, 0.5));
 }
 
+.custom-toggler {
+  border: none !important;
+  padding: 0;
+  outline: none !important;
+  background: transparent !important;
+}
+
+.hamburger-lines {
+  display: block;
+  height: 16px;
+  width: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  border-radius: 10px;
+  background: #ff9800;
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.2s ease;
+}
+
+.navbar-toggler:not(.collapsed) .line1 {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .line2 {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .line3 {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .nav-icon {
   font-size: 0.9rem;
   opacity: 0.6;
