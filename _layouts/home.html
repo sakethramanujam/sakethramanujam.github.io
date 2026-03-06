@@ -1,109 +1,331 @@
 ---
 layout: default
 ---
-<div class="page">
-    <article class="home">
-        <img class='dp' src="https://res.cloudinary.com/stuartlittle/image/upload/v1587120916/me/ID.jpg"
-            alt="sakethocat" , width="80vw">
-        <h2>Hola!</h2>
-        <h1> I'm Saketha Ramanujam</h1>
-        <h2>I'm
-            <span class="txt-rotate" data-period="1000" data-rotate='["an RF Engineer", "an Electronics Engineer",
-                "an Astronomy/Photography Enthusiast", "a Homelab-er", 
-                "a Classical Musician"]'></span>  
-        </h2>
-        <div class="fasome d-flex justify-content-center">
-            {% for social in site.data.fasome %}
-            <a href="{{social.link}}" target="_blank">
-                <i class="{{social.icon}}"></i>
-            </a>
-            {% endfor %}
-            <a href="mailto:saketh.ramanujam98@hotmail.com">
-                <i class="fas fa-envelope-square"></i>
-            </a>
-        </div>
-        <div class="additionals">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <a href="{{site.baseurl}}/sakethramanujam.pdf">
-                        <h4>cv</h4>
-                    </a>
+<div class="single-page-wrapper">
+    <!-- Home Section -->
+    <section id="home" class="page">
+        <article class="home content-container">
+            <div class="profile-header d-flex flex-column flex-md-row align-items-md-center">
+                <img class='dp rounded-circle' src="https://res.cloudinary.com/stuartlittle/image/upload/v1587120916/me/ID.jpg"
+                    alt="Saketha Ramanujam Profile">
+                <div class="ml-md-4">
+                    <h1>Saketha Ramanujam</h1>
+                    <h2>Electrical & RF Engineer | Designer | Astronomy Enthusiast</h2>
+                    
+                    <div class="fasome d-flex">
+                        {% for social in site.data.fasome %}
+                        <a href="{{social.link}}" target="_blank" title="{{social.name}}">
+                            <i class="{{social.icon}}"></i>
+                        </a>
+                        {% endfor %}
+                        <a href="mailto:saketh.ramanujam98@hotmail.com" title="Email Me">
+                            <i class="fas fa-envelope-square"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <a href="{{site.baseurl}}/talks">
-                        <h4>talks</h4>
-                    </a>
+
+            <div class="bio-text mt-4">
+                <p>
+                    I am a <strong>Camera Systems Engineer</strong> at <strong>Tesla</strong>, where I work on software engineering for the <strong>Autopilot</strong> stack and our robotics platform, <strong>Optimus</strong>. 
+                    I specialize in high-performance hardware/software co-design, sensor integration, and advanced camera stacks.
+                </p>
+                <p>
+                    With a background as a <strong>Radio Systems Engineer</strong> and <strong>Electrical Engineer</strong>, my expertise spans from low-level Linux kernel debugging and digital image processing to architecting transport layer interfaces for next-gen radio tuners and lidar systems.
+                </p>
+                <p>
+                    Beyond engineering, I am a dedicated <strong>astrophotography</strong> enthusiast, 
+                    capturing celestial phenomena from my backyard and dark-sky sites. 
+                    I also manage a high-performance <strong>homelab</strong> and am a trained classical musician.
+                </p>
+            </div>
+
+            <div class="additionals mt-4">
+                <a href="{{site.baseurl}}/sakethramanujam.pdf" target="_blank">
+                    <h4>Curriculum Vitae</h4>
+                </a>
+                <a href="#experience">
+                    <h4>Experience</h4>
+                </a>
+                <a href="#projects">
+                    <h4>Projects</h4>
+                </a>
+                <a href="#blog">
+                    <h4>Blog</h4>
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <article class="content-container">
+            <h3><span class="section-icon">🪐</span> Experience</h3>
+            <div class="timeline-grid mt-4">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Camera Systems Engineer - Software Engineering</h4>
+                        <span class="duration">Jun 2025 - Present</span>
+                    </div>
+                    <div class="timeline-company">
+                        <span class="hover-trigger">Tesla, Palo Alto
+                            <div class="hover-card">
+                                <div class="hover-card-header">Node Information</div>
+                                <div class="hover-card-body">
+                                    <div class="hover-card-row"><span class="hover-card-label">Team:</span><span class="hover-card-value">Autopilot/Optimus</span></div>
+                                    <div class="hover-card-row"><span class="hover-card-label">Stack:</span><span class="hover-card-value">C++, Python, Linux</span></div>
+                                    <div class="hover-card-row"><span class="hover-card-label">Focus:</span><span class="hover-card-value">Sensor Integration</span></div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="timeline-desc">
+                        - Brought up a new board and camera stack for data collection for our robotics platform Optimus.<br>
+                        - Developing, Integrating and evaluating our most advanced to date Camera sensors into the Autopilot stack.<br>
+                        - Handling hardware/software co-design of a test suite to detect visual occlusion for vehicle camera stack.<br>
+                        - Test Infra + Tooling.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Radio Systems Engineer</h4>
+                        <span class="duration">Dec 2022 - Jun 2025</span>
+                    </div>
+                    <div class="timeline-company">
+                        <span class="hover-trigger">Tesla, Palo Alto
+                            <div class="hover-card">
+                                <div class="hover-card-header">Node Information</div>
+                                <div class="hover-card-body">
+                                    <div class="hover-card-row"><span class="hover-card-label">Focus:</span><span class="hover-card-value">RF & SDR</span></div>
+                                    <div class="hover-card-row"><span class="hover-card-label">Infra:</span><span class="hover-card-value">Docker, K8s, Airflow</span></div>
+                                    <div class="hover-card-row"><span class="hover-card-label">Platform:</span><span class="hover-card-value">Model S3XY</span></div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="timeline-desc">
+                        - Debug Apps and tools for Software Defined Radios.<br>
+                        - Architecting transport layer interfaces for next-gen radio tuners.<br>
+                        - Product Engineering, integration, and testing for next-generation Radio Tuners through implementing test pipelines for SW tests on the Remote Tuner Module for all vehicle platforms.<br>
+                        - Board level and system level performance validation of FM/HD/DAB capable Radio Tuners.<br>
+                        - Vehicle <-> Infra enabled test pipelines for seamless test/validation experience.<br>
+                        - Data pipelines for Vehicle level tests on the factory floor for Radio, Audio platforms.<br>
+                        - Provisioning and bringup of new vehicle computers for Audio/Camera teams.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Graduate Teaching Assistant</h4>
+                        <span class="duration">Aug 2022 - Dec 2022</span>
+                    </div>
+                    <div class="timeline-company">
+                        <span class="hover-trigger">Ira A. Fulton Schools of Engineering at ASU
+                            <div class="hover-card">
+                                <div class="hover-card-header">Node Information</div>
+                                <div class="hover-card-body">
+                                    <div class="hover-card-row"><span class="hover-card-label">Subject:</span><span class="hover-card-value">Electromagnetics</span></div>
+                                    <div class="hover-card-row"><span class="hover-card-label">Tools:</span><span class="hover-card-value">ADS, HFSS</span></div>
+                                    <div class="hover-card-row"><span class="hover-card-label">Courses:</span><span class="hover-card-value">EEE 591, EEE 341</span></div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="timeline-desc">
+                        - Graduate teaching Assistant for laboratory course of EEE 591/EEE 445 Microwaves focused on with ADS, HFSS, Instrumentation.<br>
+                        - Teaching Assistant for EEE 341 Engineering Electromagnetics, aiding students in accomplishing laboratory tasks.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Radio Systems Engineering Intern</h4>
+                        <span class="duration">Jan 2022 - Aug 2022</span>
+                    </div>
+                    <div class="timeline-company">Tesla, Palo Alto</div>
+                    <div class="timeline-desc">
+                        - Radio Tuner Systems Development and Validation for in Car Audio on Models S3XY.<br>
+                        - Audio Systems Validation & Factory Test log Data Pipeline Management/Infrastructure Dev/Automation.<br>
+                        - Debugging and Failure Analysis NXP Saturn/Dirana/Mercury Systems in Multi Tuner Environment systems.<br>
+                        - Firmware Validation for Remote Tuner Module(s) & system level test measurements on In-Car computing environments.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Coding and Research Aide</h4>
+                        <span class="duration">Jun 2021 - Jan 2022</span>
+                    </div>
+                    <div class="timeline-company">ASU Biodesign Institute</div>
+                    <div class="timeline-desc">
+                        - Worked under the guidance of Dr. Leland H. Hartwell (Nobel Laureate) on developing experiments in Python and JS with Psychopy/PsychoJS.<br>
+                        - Developed a web based eye tracking tool with integration into Psychopy platform and pavlovia.<br>
+                        - Integrated webgazer.js into psychopy js.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Graduate Services Assistant</h4>
+                        <span class="duration">Mar 2021 - Jan 2022</span>
+                    </div>
+                    <div class="timeline-company">Ira A. Fulton Schools of Engineering at ASU</div>
+                    <div class="timeline-desc">
+                        - Electrical Engineer on the Dr. Calhoun's Lidar team for developing a MEMS based lidar solution for navigation.<br>
+                        - Responsible for troubleshooting off the shelf components and their integration into systems being designed.<br>
+                        - Developed a scanned lidar system using Arduino and Servo Motors using a laser range finder.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Data Acquisition Assistant</h4>
+                        <span class="duration">Feb 2021 - Mar 2021</span>
+                    </div>
+                    <div class="timeline-company">ASU School of Politics and Global Studies</div>
+                    <div class="timeline-desc">
+                        - Develop and maintain web-scrapers, python clients to acquire migration/deportation data from target source websites.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Research And Development Engineer</h4>
+                        <span class="duration">Dec 2019 - Dec 2020</span>
+                    </div>
+                    <div class="timeline-company">Gayatri Vidya Parishad SIRC</div>
+                    <div class="timeline-desc">
+                        - Research, development and design of photonic-systems and related signal processing algorithms to detect pollutants in AIR and Structural Health Monitoring.<br>
+                        - Design Experiments to understand behaviour Laser Interactions with Particulate pollutants.<br>
+                        - Develop Experimental Software for Data Acquisition over the Network and apply Machine Learning Algorithms.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Data Pipelines Engineering Intern</h4>
+                        <span class="duration">2019 - Dec 2019</span>
+                    </div>
+                    <div class="timeline-company">rorodata</div>
+                    <div class="timeline-desc">
+                        - Evaluated Apache Airflow for production data pipelines by writing DAGS in python and bash.<br>
+                        - Performance testing of parallel processing architectures & Deployed APIs on GCP using Cloud Build, App Engine and Cloud Run.<br>
+                        - Developed a test bot for APIs and User flow that posts reports to slack.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Campus Student Expert</h4>
+                        <span class="duration">Sep 2018 - May 2019</span>
+                    </div>
+                    <div class="timeline-company">GitHub</div>
+                    <div class="timeline-desc">
+                        - Introduce and Enhance the culture of development and usage of Open Source Software to peers and on campus communities.<br>
+                        - Previously managed GVP-Ai-Club, GVPCE, Vizag (2018-19).
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Photonics Applications Research Intern</h4>
+                        <span class="duration">May 2018 - May 2019</span>
+                    </div>
+                    <div class="timeline-company">Gayatri Vidya Parishad SIRC</div>
+                    <div class="timeline-desc">
+                        - Study Effects of Laser scattering phenomenon in fluids (air and water) and design experiments to detect constituents.<br>
+                        - Use Photo sensitive sensors to observe structural health of structures in Sub Sonic Wind Tunnels.<br>
+                        - Develop Algorithms to reconstruct muffled audio regenerated from Photonic systems.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4>Sound and Game Designer</h4>
+                        <span class="duration">Jan 2017 - Aug 2017</span>
+                    </div>
+                    <div class="timeline-company">KHADGA ENTERTAINMENT</div>
+                    <div class="timeline-desc">
+                        - Develop, record and mix Foley, In Game and Promotional Audio for Indie Android Games.
+                    </div>
                 </div>
             </div>
-        </div>
-    </article>
-    <div class="default-footer">
-        <div class="d-flex justify-content-center">
-            <p class="copyright">
-                Made with ❤️ by Saketha Ramanujam | Solar System by <a href="https://codepen.io/kowlor/pen/ZYYQoy">Dathink</a>
-            </p>
-        </div>
-    </div>
+        </article>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        {% assign sorted_posts = site.posts | sort:'date' | reverse %}
+        <article class="posts content-container">
+            <h3><span class="section-icon">☄️</span> Blog Posts</h3>
+            <div class="posts-grid mt-4">
+                {% for post in sorted_posts %}
+                <div class="post-card">
+                    <span class="date">{{ post.date | date: "%Y %b %-d" }}</span>
+                    <a href="{{site.baseurl}}{{ post.url }}" class="hover-trigger">
+                        <h2>{{ post.title }}</h2>
+                        <div class="hover-card">
+                            <div class="hover-card-header">Packet Metadata</div>
+                            <div class="hover-card-body">
+                                <div class="hover-card-row"><span class="hover-card-label">Type:</span><span class="hover-card-value">Blog Post</span></div>
+                                <div class="hover-card-row"><span class="hover-card-label">Encoding:</span><span class="hover-card-value">Markdown</span></div>
+                                <div class="hover-card-row"><span class="hover-card-label">Hop:</span><span class="hover-card-value">/blog{{ post.url }}</span></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </article>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <article class="timeline content-container">
+            <h3><span class="section-icon">🛰️</span> Projects</h3>
+            <div class="project-grid mt-4">
+                {% assign projects = site.data.projects %}
+                {% for project in projects %}
+                <div class="project-card">
+                    <a href="https://github.com/sakethramanujam/{{project.name}}" target="_blank" class="hover-trigger">
+                        <h1>{{project.name}}</h1>
+                        <div class="hover-card">
+                            <div class="hover-card-header">Repository Details</div>
+                            <div class="hover-card-body">
+                                <div class="hover-card-row"><span class="hover-card-label">Source:</span><span class="hover-card-value">GitHub</span></div>
+                                <div class="hover-card-row"><span class="hover-card-label">License:</span><span class="hover-card-value">MIT/Open</span></div>
+                                <div class="hover-card-row"><span class="hover-card-label">Remote:</span><span class="hover-card-value">@sakethramanujam</span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <p>{{ project.desc }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </article>
+    </section>
+
+    <!-- Talks Section -->
+    <section id="talks">
+        <article class="posts content-container">
+            <h3><span class="section-icon">📡</span> Talks & Presentations</h3>
+            <div class="posts-grid mt-4">
+                {% assign talks = site.data.talks | sort : 'date'  | reverse %}
+                {% for talk in talks %}
+                <div class="post-card">
+                    <span class="date">{{ talk.date | date: "%Y %b %-d" }}</span>
+                    <a href="{{talk.link}}" target="_blank">
+                        <h2>{{ talk.title }} ({{ talk.org }})</h2>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </article>
+    </section>
 </div>
 
-</div>
 <script>
-    var TxtRotate = function (el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtRotate.prototype.tick = function () {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-        var that = this;
-        var delta = 300 - Math.random() * 750;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            this.loopNum++;
-            delta = 250;
-        }
-
-        setTimeout(function () {
-            that.tick();
-        }, delta);
-    };
-
-    window.onload = function () {
-        var elements = document.getElementsByClassName('txt-rotate');
-        for (var i = 0; i < elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-rotate');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-                new TxtRotate(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-        document.body.appendChild(css);
-    };
+    // Minimal rotation script if still needed, otherwise Karpathy style doesn't use it.
+    // I'll leave it for now but Andrej would probably remove it for pure HTML/CSS.
 </script>

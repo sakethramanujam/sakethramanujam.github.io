@@ -1,7 +1,10 @@
-- name: blog
-  link: /blog
-- name: lablog
-  link: /lablog
+- name: home
+  link: "/#home"
+- name: experience
+  link: "/#experience"
 - name: projects
-  link: /projects
- 
+  link: "/#projects"
+- name: blog
+  link: "/#blog"
+- name: talks
+  link: "/#talks"

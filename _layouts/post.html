@@ -2,58 +2,53 @@
 layout: blog-default
 ---
 
-<div class="page container-lg p-responsive pb-md-6">
-  <div class="post">
-    <h1>{{ page.title | escape }}</h1>
-    <p class="date">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <time datetime="{{ page.date | date: "%F" }}">
-        {{ page.date | date: date_format }}
+<div class="page pb-5">
+  <div class="content-container">
+    <div class="post shadow-lg">
+      <div class="post-header text-center mb-5">
+      <h1 class="display-4 font-weight-bold mb-3" style="color: #ff9800;">{{ page.title | escape }}</h1>
+      <time class="text-muted text-uppercase letter-spacing-2" datetime="{{ page.date | date: "%F" }}">
+        <i class="far fa-calendar-alt mr-2"></i> {{ page.date | date: "%B %-d, %Y" }}
       </time>
-    </p>
-    {{ page.content }}
-    <div class="PageNavigation">
+    </div>
+
+    <div class="post-content mt-4" style="line-height: 1.8; font-size: 1.1rem; color: #d0d0d0;">
+      {{ page.content }}
+    </div>
+
+    <hr class="my-5" style="border-top: 1px solid rgba(255,255,255,0.1);">
+
+    <div class="PageNavigation d-flex justify-content-between">
       {% if page.previous.url %}
-      <a class="btn btn-outline-light btn-sm float-left" href="{{page.previous.url}}">
-        &laquo;
-        {{page.previous.title}}
+      <a class="btn btn-outline-warning btn-sm" href="{{page.previous.url}}">
+        <i class="fas fa-chevron-left mr-2"></i> {{page.previous.title}}
       </a>
       {% endif %}
       {% if page.next.url %}
-      <a class="btn btn-outline-light btn-sm float-right" href="{{page.next.url}}">
-        {{page.next.title}} &raquo;
+      <a class="btn btn-outline-warning btn-sm" href="{{page.next.url}}">
+        {{page.next.title}} <i class="fas fa-chevron-right ml-2"></i>
       </a>
       {% endif %}
     </div>
-    <br>
-    <hr color="#252830">
-    <div>
-      <a class="btn btn-primary" href="/feed.xml" target="_blank">
-        <img
-          src="https://images.vexels.com/media/users/3/131980/isolated/preview/00204564462763e16a3d4f9fd3aeceb0-rss-ring-icon-by-vexels.png"
-          width="25px">
-        RSS
+
+    <div class="mt-5 text-center">
+      <a class="btn btn-primary px-4" href="/feed.xml" target="_blank">
+        <i class="fas fa-rss mr-2"></i> Subscribe via RSS
       </a>
     </div>
+
     {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
+    <div class="mt-5 pt-4 border-top border-secondary">
+      {%- include disqus_comments.html -%}
+    </div>
     {%- endif -%}
   </div>
-  <div class="blog-footer">
-    <div class="wrapper d-flex justify-content-center">
-      <p class="copyright">
-        copyright &copy; 2020 by Saketha Ramanujam
-      </p>
-    </div>
   </div>
-
 </div>
 
 <script>
-  const imgs = document.querySelectorAll('.post>p>img');
-  imgs.forEach(Element => {
-    Element.setAttribute('class', 'img-fluid')
-    Element.setAttribute('align', 'center!important')
-    Element.setAttribute('width', '100%')
+  const imgs = document.querySelectorAll('.post-content img');
+  imgs.forEach(img => {
+    img.classList.add('img-fluid', 'rounded', 'my-4', 'mx-auto', 'd-block', 'shadow');
   });
 </script>

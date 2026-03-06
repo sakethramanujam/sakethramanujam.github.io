@@ -1,47 +1,53 @@
-.timeline {
-  background-color: rgba(37, 40, 48, 0.6);
-  text-align: left;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  margin-bottom:2em;
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.timeline > a > h1 {
-  margin-left: 0.5em;
-  color: white;
+.project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  transition: none;
+  gap: 15px;
 }
 
-.timeline > p {
-  margin-left: 1.5em;
-  color: grey;
+.project-card:hover {
+  transform: none;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
-.timeline > a > h1:hover {
-  color: green !important;
-  text-align: left;
-  text-decoration: none !important;
+.project-card:before {
+  display: none;
 }
 
-@media screen and (max-width: 320px) {
-  .timeline > h1 {
-    font-size: 10px;
-  }
-  .timeline > a > h1 {
-    font-size: 10px;
-  }
-  .timeline > p {
-    font-size: 8px;
-  }
+.project-card h1 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  color: #ff9800;
+  text-decoration: underline;
+  text-decoration-color: #444;
+  min-width: 150px;
 }
 
-@media screen and (max-width: 1024px) {
-  .timeline > h1 {
-    font-size: 15px;
-  }
-  .timeline > a > h1 {
-    font-size: 15px;
-  }
-  .timeline > p {
-    font-size: 13px;
-  }
+.project-card:hover h1 {
+  color: #ff9800;
+  text-decoration-color: #ff9800;
+}
+
+.project-card p {
+  color: #888;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.project-card .github-icon {
+  display: none;
 }

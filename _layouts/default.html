@@ -1,13 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
 {%- include head.html -%}
-
-<body>
+<body class="d-flex flex-column h-100">
     <header>
-        <div class="wrapper">
-            <section>
-                {% include navigation.html %}
-            </section>
-        </div>
+        {% include navigation.html %}
     </header>
+    
     <div class='solar-syst'>
         <div class='sun'></div>
         <div class='mercury'></div>
@@ -21,9 +19,11 @@
         <div class='pluto'></div>
         <div class='asteroids-belt'></div>
     </div>
-    <div role="main">
-        <div class="container">
-            {{ content }}
-        </div>
-    </div>
+
+    <main role="main" class="flex-shrink-0">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
 </body>
+</html>
