@@ -1,10 +1,15 @@
 - name: home
   link: "/#home"
+  icon: "fas fa-home"
 - name: experience
   link: "/#experience"
+  icon: "fas fa-user-astronaut"
 - name: projects
   link: "/#projects"
+  icon: "fas fa-satellite"
 - name: blog
   link: "/#blog"
+  icon: "fas fa-comet"
 - name: talks
   link: "/#talks"
+  icon: "fas fa-broadcast-tower"
