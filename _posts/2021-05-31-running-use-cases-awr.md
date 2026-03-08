@@ -12,6 +12,9 @@ categories: mmWave Cascade-Radar
 ## AWR2243
 The Texas Instruments AWR2243 mmWave Cascade Radar evaluation board is a 4 chip FMCW (Frequency Modulated Continuous Wave) radar sensor that supports long range beam forming applications and short range MIMO applications such as object detection, long range radar etc. The evaluation board boasts an antenna field of view of about +-70 degrees with an angular resolution of 1.4 degrees which open doors to a plethora of applications.
 
+![TDA 2xx Block Diagram](https://res.cloudinary.com/stuartlittle/image/upload/v1623458980/lablog/0/block-dg.png)
+*TDA 2xx Block Diagram (Credits: Texas Instruments)*
+
 The radar is powered by a TDA2xx capture card that has a Dual Cortex A-15 SOC, a Dual DSP C66x and several other high performance processing capabilities to enable several real time applications.
 
 ## THE RADAR SDK
@@ -41,6 +44,8 @@ Available sample use cases:
 ## VERIFYING NETWORK CONFIGURATION
 If the serial terminal shows `0.0.0.0`, you may need to configure a static IP. This is handled in `NDK_Config.cfg` under `PROCESSOR_SDK_RADAR_xx_yy_zz/vision_sdk/links_fw/src/rtos/bios_app_common/tda2xx/cfg`.
 
+![Network Configuration Output](https://res.cloudinary.com/stuartlittle/image/upload/v1623458258/lablog/0/has-ip.png)
+
 *   Set `enableStaticIPEth0 = 1`.
 *   Default IP: `192.168.1.200`.
 *   Computer IP: `192.168.1.101` (Subnet: `255.255.255.0`, DNS: `192.168.1.1`).
@@ -61,15 +66,30 @@ $ gmake -s appimage      # building appimage
 ## SERIAL COMMUNICATION
 Use a serial emulator like TeraTerm. Connect to the lower numerical COM port and power on the board to see the boot sequence and use case selection menu.
 
+![TeraTerm Connection](https://res.cloudinary.com/stuartlittle/image/upload/c_scale,w_648/v1623456618/lablog/0/tera-term-new-connection.png)
+*Serial connection settings window (TeraTerm)*
+
 ## RUNNING THE USECASES
 1. Select **1** for Radar Usecases.
 2. Select option **b** for Tx Beam forming.
 3. Select **1** for TFDTP protocol (supported by the provided MATLAB scripts).
 
+![Use Case Selection](https://res.cloudinary.com/stuartlittle/image/upload/c_scale,w_621/v1623456619/lablog/0/tera_term_use_case_menu.png)
+*Device startup sequence and top level menu*
+
+![Radar Use Case Choice](https://res.cloudinary.com/stuartlittle/image/upload/c_scale,w_621/v1623456619/lablog/0/tera_term_use_case_choice.png)
+*Radar Usecase selection menu*
+
+![Transfer Protocol Menu](https://res.cloudinary.com/stuartlittle/image/upload/c_scale,w_621/v1623456619/lablog/0/tera-term-tftdp.png)
+*File/network transfer protocol menu*
+
 Run the MATLAB script `radar_cascade_bf_demo.m` found in the SDK:
 ```matlab
 >> radar_cascade_bf_demo('192.168.1.200', '192.168.1.101','BB-44-33-22-11-AA', 'TI', 5, 1)
 ```
+
+![MATLAB Output Heatmap](https://res.cloudinary.com/stuartlittle/image/upload/c_scale,w_621/v1623456619/lablog/0/heatmap_screen.png)
+*Real-time Radar capture figure (MATLAB GUI)*
 
 ## CHECKLIST
 1. Format SD Card to FAT32.
