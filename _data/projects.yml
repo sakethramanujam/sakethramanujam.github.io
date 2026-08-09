@@ -1,4 +1,7 @@
 - project: 
+  name: percy-metadata-download-automator
+  desc: Mars 2020 metadata automation + 3D playground (poses, path, photo spheres, stereo). Catalogue on Kaggle; code public on GitHub.
+- project: 
   name: percy-image-downloader
   desc: CLI for downloading images from NASA Mars 2020 Mission Rover's website
 - project:
