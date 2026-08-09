@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reviving Percy — from dusty scripts to a Mars 2020 playground"
-date:   2026-08-09 12:00:00 +0530
+date:   2026-08-08 22:00:00 -0700
 categories: astronomy opensource mars
 author: saketharamanujam
 comments: true
