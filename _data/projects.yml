@@ -1,3 +1,6 @@
+- project:
+  name: know-your-machines
+  desc: Per-OS scripts to inventory a machine, optional benches, secret gist reports.
 - project: 
   name: percy-metadata-download-automator
   desc: Mars 2020 metadata automation + 3D playground (poses, path, photo spheres, stereo). Catalogue on Kaggle; code public on GitHub.
